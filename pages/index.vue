@@ -4,7 +4,7 @@
       <b-img
         :src="avatar"
         id="avatar-img"
-        alt="Asaolu Elijah Memoji"
+        alt="Rustambek"
         @mouseenter="changeAvatar"
         @mouseleave="changeAvatar"
       />
@@ -13,16 +13,16 @@
     <b-col md="8">
       <h2 class="intro animate__animated animate__fadeInUp animate__fast">
         Hi 👋,
-        <br />I<span>'m Asaolu&nbsp;Elijah</span>.
+        <br/>I<span>'m Eshbo'riyev Rustambek</span>.
       </h2>
 
       <div class="col-md-10 info">
         A <b>front-end developer</b> and <b>technical writer</b> passionate
-        about solving problems with tech.<br />
+        about solving problems with tech.<br/>
         I am skilled with building exceptional <b>websites</b> and
         <b>mobile applications</b>, and currently i'm exploring the AI
         (Artificial Intelligence) ecosystem.
-        <br />
+        <br/>
         <b-button
           class="action-btn animate__animated animate__wobble animate__delay-4s animate__fast"
           to="/projects"
@@ -39,27 +39,27 @@
           class="social-icons animate__animated animate__fadeInUp animate__delay-1s"
         >
           <social-link :to="socialLinks.github">
-            <GithubIcon />
+            <GithubIcon/>
           </social-link>
 
           <social-link :to="socialLinks.linkedin">
-            <LinkedinIcon />
+            <LinkedinIcon/>
           </social-link>
 
           <social-link :to="socialLinks.twitter">
-            <TwitterIcon />
+            <TwitterIcon/>
           </social-link>
 
           <social-link :to="socialLinks.facebook">
-            <FacebookIcon />
+            <FacebookIcon/>
           </social-link>
 
           <social-link :to="socialLinks.mail">
-            <MailIcon />
+            <MailIcon/>
           </social-link>
 
           <social-link :to="socialLinks.youtube">
-            <YoutubeIcon />
+            <YoutubeIcon/>
           </social-link>
         </div>
       </div>
@@ -87,37 +87,37 @@ export default {
 
   data() {
     return {
-      avatar: require("@/assets/avatar-1.webp"),
+      avatar: require("@/assets/avatar.webp"),
       // ADD YOUR SOCIAL LINKS HERE 👇
       socialLinks: {
-        github: "http://github.com/asaoluelijah",
-        linkedin: "https://www.linkedin.com/in/asaoluelijah/",
-        twitter: "https://twitter.com/asaolu_elijah",
-        facebook: "https://facebook.com/asaoluelijah01",
-        mail: "mailto:info4a.elijah@gmail.com",
+        github: "http://github.com/RustambekJavascript",
+        linkedin: "https://www.linkedin.com/in/rustambek-eshbo-riyev-949808230",
+        twitter: "https://twitter.com/RRiyev7089",
+        facebook: "https://facebook.com/Rustambek Eshbo'riyev",
+        mail: "mailto:rustambekeshboriyev@gmail.com",
         youtube: ""
       }
     };
   },
 
   head: {
-    title: "Portfolio ⚡ - Asaolu Elijah",
+    title: "Portfolio ⚡ - Rustambek Eshbo'riyev",
     meta: [
       {
         hid: "description",
         name: "description",
         content:
-          "Asaolu Elijah is an awesome front-end developer and technical writer, passionate about building solutions that works across multiple platforms with high accessibility approach. Elijah has vast knowledge in web development with over 3+ years experience in building actual products"
+          "Rustambek Eshbo'riyev is an awesome front-end developer and technical writer, passionate about building solutions that works across multiple platforms with high accessibility approach. Elijah has vast knowledge in web development with over 3+ years experience in building actual products"
       },
       {
         hid: "og:title",
         name: "og:title",
-        content: "Portfolio ⚡ - Asaolu Elijah"
+        content: "Portfolio ⚡ - Rustambek Eshbo'riyev"
       },
       {
         property: "og:description",
         content:
-          "Asaolu Elijah is an awesome front-end developer and technical writer, passionate about building solutions that works across multiple platforms with high accessibility approach. Elijah has vast knowledge in web development with over 3+ years experience in building actual products"
+          "Rustambek Eshbo'riyev is an awesome front-end developer and technical writer, passionate about building solutions that works across multiple platforms with high accessibility approach. Elijah has vast knowledge in web development with over 3+ years experience in building actual products"
       },
       {
         hid: "og:image",
@@ -128,7 +128,7 @@ export default {
   },
   methods: {
     changeAvatar() {
-      if (this.avatar == require("@/assets/avatar-2.webp")) {
+      if (this.avatar === require("@/assets/avatar-2.webp")) {
         this.avatar = require("@/assets/avatar-1.webp");
       } else {
         this.avatar = require("@/assets/avatar-2.webp");

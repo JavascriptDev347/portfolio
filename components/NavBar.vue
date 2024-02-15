@@ -1,7 +1,8 @@
 <template>
   <b-navbar toggleable="lg" fixed="top" type="light" variant="light">
     <b-navbar-brand tag="h1" to="/" style="font-weight: bolder;"
-      >> AE.</b-navbar-brand
+    >> RD.
+    </b-navbar-brand
     >
     <b-navbar-toggle
       target="nav-collapse"
@@ -17,12 +18,12 @@
         <b-nav-item to="/contact">Contact Me</b-nav-item>
         <b-nav-item
           href="#"
-          v-if="themeMode == 'dark'"
+          v-if="themeMode === 'dark'"
           @click="toggleDarkMode"
           class="moon-icon"
           title="Toggle Darkmode"
         >
-          <SunnyIcon style="color: #eee;font-size: 20px;" />
+          <SunnyIcon style="color: #eee;font-size: 20px;"/>
         </b-nav-item>
         <b-nav-item
           href="#"
@@ -31,7 +32,7 @@
           class="moon-icon"
           title="Toggle Darkmode"
         >
-          <MoonIcon style="color: #000;font-size: 20px;" />
+          <MoonIcon style="color: #000;font-size: 20px;"/>
         </b-nav-item>
       </b-navbar-nav>
     </b-collapse>
@@ -42,6 +43,7 @@
 require("vue-ionicons/ionicons.css");
 import SunnyIcon from "vue-ionicons/dist/md-sunny.vue";
 import MoonIcon from "vue-ionicons/dist/md-moon.vue";
+
 export default {
   name: "NavBar",
   components: {
@@ -57,7 +59,7 @@ export default {
     toggleDarkMode() {
       if (
         localStorage.themeMode !== undefined &&
-        localStorage.themeMode != "dark"
+        localStorage.themeMode !== "dark"
       ) {
         localStorage.themeMode = "dark";
         document.body.classList.toggle("dark");
@@ -77,7 +79,7 @@ export default {
       }
     }
   },
-  mounted(){
+  mounted() {
     this.themeMode = localStorage.themeMode;
   }
 };
@@ -86,29 +88,40 @@ export default {
 .navbar-nav {
   margin-left: 100px;
 }
+
 @media screen and (max-width: 420px) {
   .navbar-nav {
     margin-left: 0px;
   }
 }
+
 .nav-item {
   font-size: 14px;
   margin: 15px;
   border-radius: 2px;
 }
+
 .nav-link a {
   color: #000 !important;
   text-decoration: none;
 }
+
 .nav-item:hover {
   background: rgb(243, 240, 240);
 }
+
 .moon-icon {
   color: #000;
 }
+
 .moon-icon:hover {
   background: transparent !important;
 }
+
+.nuxt-link-exact-active {
+  color: blue !important;
+}
+
 .bg-light {
   background-color: #ffffff !important;
 }

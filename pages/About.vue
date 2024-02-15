@@ -6,7 +6,7 @@
           <h1 class="line-after">About Me</h1>
           <h4 class="mt-4">Hey 👋</h4>
           <p>
-            My name is Asaolu Elijah, I am a <b>front-end developer</b> and
+            My name is Rustambek Eshbo'riyev, I am a <b>front-end developer</b> and
             <b>technical writer</b>. Currently studying Computer Science at
             <u>OAUSTECH</u>.
           </p>
@@ -49,7 +49,7 @@
 export default {
   data() {
     return {
-      startYear: 2017,
+      startYear: 2022,
       currYear: new Date().getFullYear(),
       stacks: [
         {
@@ -86,13 +86,13 @@ export default {
     };
   },
   head: {
-    title: "About 🕵️‍♂️ - Asaolu Elijah",
+    title: "About 🕵️‍♂️ - Rustambek Eshbo'riyev",
     meta: [
       {
         hid: "description",
         name: "description",
         // currYear - startYear
-        content: `Hey there 👋 My name is Asaolu Elijah, i am a front-end developer and technical writer currently studying Computer Science at OAUSTECH(Nigeria). i have many years of experience in crafting beautiful web and mobile interfaces. Plus i am an agile learner, i learn new cool stuffs everyday.`
+        content: `Hey there 👋 My name is Rustambek Eshbo'riyev, i am a front-end developer and technical writer currently studying Computer Science at OAUSTECH(Nigeria). i have many years of experience in crafting beautiful web and mobile interfaces. Plus i am an agile learner, i learn new cool stuffs everyday.`
       }
     ]
   }
@@ -103,9 +103,11 @@ export default {
   margin-top: 140px;
   text-align: left;
 }
+
 .line-after {
   overflow: hidden;
 }
+
 .line-after::after {
   content: "";
   display: inline-block;
@@ -116,11 +118,13 @@ export default {
   margin-left: 10px;
   border-top: 2px solid rgb(211, 46, 46);
 }
+
 .abt-img {
   width: inherit;
   height: inherit;
   border-radius: 5px;
 }
+
 /* .abt-img:hover {
   animation: swing;
   animation-duration: 2s;

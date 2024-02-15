@@ -10,7 +10,7 @@
         </p>
 
         <b-alert show variant="success" v-if="showAlert">
-          <strong>All done 🎉</strong><br />
+          <strong>All done 🎉</strong><br/>
           Thanks for reaching out {{ this.formData.name }}, I'll reply as soon
           as i can.
         </b-alert>
@@ -70,7 +70,7 @@ export default {
       data.append("Email", self.formData.email);
       data.append("Message", self.formData.message);
 
-      fetch("https://formspree.io/f/mvodbwva", {
+      fetch("https://formspree.io/f/xqkrqbbo", {
         method: "POST",
         body: data,
         headers: {
@@ -83,14 +83,14 @@ export default {
         } else {
           alert("Sending message failed, please try again");
         }
-      });
-      // .catch(error => {
-      //   alert("Sending message failed, please try again");
-      // });
+      })
+        .catch(error => {
+          alert("Sending message failed, please try again");
+        });
     }
   },
   head: {
-    title: "Contact 📧 - Asaolu Elijah",
+    title: "Contact 📧 - Rustambek Eshbo'riyev",
     meta: [
       {
         hid: "description",
@@ -100,11 +100,11 @@ export default {
       {
         hid: "og:title",
         name: "og:title",
-        content: "Contact 📧 - Asaolu Elijah"
+        content: "Contact 📧 - Rustambek Eshbo'riyev"
       },
       {
         property: "og:description",
-        content: "Do you have any enquires? Send a message now to Asaolu Elijah"
+        content: "Do you have any enquires? Send a message now to Rustambek Eshbo'riyev"
       },
       {
         hid: "og:image",
@@ -119,6 +119,7 @@ export default {
 .container {
   margin-top: 120px;
 }
+
 form {
   margin-top: 40px;
   text-align: left;
