@@ -13,6 +13,15 @@ export default {
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
    */
+
+  router: {
+    base: '/' // Shaxsiy domen bo'lgani uchun '/' qolishi kerak
+  },
+
+  generate: {
+    fallback: true // 404 xatoliklari bo'lmasligi uchun
+  },
+  
   head: {
     title: process.env.npm_package_name || "",
     meta: [
